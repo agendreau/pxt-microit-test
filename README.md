@@ -19,7 +19,7 @@ basic.forever(function () {
 
 
 ```package
-gatorEnvironment=github:sparkfun/pxt-gator-microphone
+gatorMicrophone=github:sparkfun/pxt-gator-microphone
 ```
 
 
