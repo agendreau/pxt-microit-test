@@ -15,8 +15,27 @@ basic.forever(function () {
     basic.pause(2000)
 })
 ```
+## IGNORE
+Hacks to get in extra blocks to make it more challenging
 
+```blocks
+input.onGesture(Gesture.Shake, function () {
 
+})
+input.onPinPressed(TouchPin.P0, function () {
+    basic.showString("" + Math.round(gatorMicrophone.getSoundIntensity()))
+    basic.showIcon(IconNames.Heart)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+basic.forever(function () {
+
+})
 
 
 ```package
