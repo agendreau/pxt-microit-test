@@ -11,6 +11,7 @@ When you think, you've got it, download it and try it out.
 radio.setGroup(7)
 basic.forever(function () {
     radio.sendNumber(gatorMicrophone.getSoundIntensity())
+    radio.sendNumber(gatorEnvironment.getMeasurement(measurementType.degreesF))
     basic.pause(2000)
 })
 ```
@@ -20,6 +21,7 @@ basic.forever(function () {
 
 ```package
 gatorMicrophone=github:sparkfun/pxt-gator-microphone
+gatorEnvironment=github:sparkfun/pxt-gator-environment
 ```
 
 
