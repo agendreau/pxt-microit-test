@@ -6,7 +6,6 @@
         "core": "*",
         "radio": "*",
         "gatorMicrophone": "github:sparkfun/pxt-gator-microphone"
-
     },
     "files": [
         "README.md",
