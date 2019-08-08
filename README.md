@@ -1,21 +1,25 @@
-# pxt-microit-test
+ # Challenge
+Sound Sensor Data Collection Challenge
+
+## Step 1
+``||basic: Continuously||`` collect ``||gatorSound: sound||`` samples every two seconds and ``||radio: send||`` them 
+to the data display application which is listening on radio channel 7. 
+Do not forget to set your ``||radio: channel||`` to 7.
+When you think, you've got it, download it and try it out.
+
+```blocks
+radio.setGroup(7)
+basic.forever(function () {
+    radio.sendNumber(gatorMicrophone.getSoundIntensity())
+    basic.pause(2000)
+})
+```
 
 
 
-## TODO
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] On GitHub, create a new file named LICENSE. Select the MIT License template.
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
+```package
+gatorEnvironment=github:sparkfun/pxt-gator-microphone
+```
 
-Read more at https://makecode.microbit.org/extensions
-
-## Supported targets
-
-* for PXT/microbit
-(The metadata above is needed for package search.)
 
